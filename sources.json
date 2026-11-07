@@ -1,0 +1,94 @@
+[
+  {
+    "issuer": "Chase",
+    "card_name": "Sapphire Preferred",
+    "document_title": "Chase Sapphire Preferred Guide to Benefits",
+    "url": "https://static.chasecdn.com/content/services/structured-document/document.en.pdf/card/benefits-center/product-benefits-guide-pdf/BGC11387_v2.pdf",
+    "filename": "chase_sapphire_preferred.pdf"
+  },
+  {
+    "issuer": "Chase",
+    "card_name": "Sapphire Reserve",
+    "document_title": "Chase Sapphire Reserve Guide to Benefits",
+    "url": "https://static.chasecdn.com/content/services/structured-document/document.en.pdf/card/benefits-center/product-benefits-guide-pdf/BGC11388_v2.pdf",
+    "filename": "chase_sapphire_reserve.pdf"
+  },
+  {
+    "issuer": "Chase",
+    "card_name": "Freedom Unlimited",
+    "document_title": "Chase Freedom Unlimited, Freedom Rise, and Freedom Student Guide to Benefits",
+    "url": "https://static.chasecdn.com/content/services/structured-document/document.en.pdf/card/benefits-center/product-benefits-guide-pdf/BGC11366_v2.pdf",
+    "filename": "chase_freedom_unlimited.pdf"
+  },
+  {
+    "issuer": "American Express",
+    "card_name": "Platinum",
+    "document_title": "American Express Platinum Purchase Protection Benefit Guide",
+    "url": "https://www.americanexpress.com/content/dam/amex/us/credit-cards/features-benefits/PP-Benefit-Guide_316-404_EDT_10.20_REV_4.24_a11y.pdf",
+    "filename": "amex_platinum_purchase_protection.pdf"
+  },
+  {
+    "issuer": "American Express",
+    "card_name": "Platinum",
+    "document_title": "American Express Return Protection Benefit Guide",
+    "url": "https://www.americanexpress.com/content/dam/amex/us/credit-cards/features-benefits/policies/NAC-Benefit-Guides/RP_Benefit_Guide_Rev_10-20.pdf",
+    "filename": "amex_platinum_return_protection.pdf"
+  },
+  {
+    "issuer": "American Express",
+    "card_name": "Platinum",
+    "document_title": "American Express Platinum Trip Delay Insurance Guide ($500, 6 hours)",
+    "url": "https://www.americanexpress.com/content/dam/amex/us/credit-cards/features-benefits/policies/trip-delay/trip-delay-insurance-500-6hours.pdf",
+    "filename": "amex_platinum_trip_delay.pdf"
+  },
+  {
+    "issuer": "American Express",
+    "card_name": "Gold",
+    "document_title": "American Express Gold Trip Delay Insurance Guide ($300, 12 hours)",
+    "url": "https://www.americanexpress.com/content/dam/amex/us/credit-cards/features-benefits/policies/trip-delay/trip-delay-insurance-300-12hours.pdf",
+    "filename": "amex_gold_trip_delay.pdf"
+  },
+  {
+    "issuer": "Capital One",
+    "card_name": "Venture X",
+    "document_title": "Capital One Visa Infinite Guide to Card Benefits",
+    "url": "https://ecm.capitalone.com/WCM/card/benefits-guide/visa-benefits-guides/visa-infinite-english.pdf",
+    "filename": "capital_one_venture_x.pdf"
+  },
+  {
+    "issuer": "Capital One",
+    "card_name": "Visa Signature",
+    "document_title": "Capital One Visa Signature Guide to Card Benefits",
+    "url": "https://ecm.capitalone.com/WCM/card/benefits-guide/visa-benefits-guides/visa-signature-english.pdf",
+    "filename": "capital_one_visa_signature.pdf"
+  },
+  {
+    "issuer": "Citi",
+    "card_name": "Strata Premier",
+    "document_title": "Citi Guide to Protection Benefits",
+    "url": "https://cardright.com/wp-content/uploads/2026/05/citi-cards-benefit-guide.pdf",
+    "filename": "citi_strata_premier.pdf",
+    "source_status": "third_party_mirror_verify_before_production"
+  },
+  {
+    "issuer": "Chase",
+    "card_name": "United Club",
+    "document_title": "Chase United Club Card Guide to Benefits",
+    "url": "https://static.chasecdn.com/content/services/structured-document/document.en.pdf/card/benefits-center/product-benefits-guide-pdf/BGC11377_v2.pdf",
+    "filename": "chase_united_club.pdf"
+  },
+  {
+    "issuer": "Chase",
+    "card_name": "United Club Business",
+    "document_title": "Chase United Club Business Card Guide to Benefits",
+    "url": "https://static.chasecdn.com/content/services/structured-document/document.en.pdf/card/benefits-center/product-benefits-guide-pdf/BGC11383_v2.pdf",
+    "filename": "chase_united_club_business.pdf"
+  },
+  {
+    "issuer": "Chase",
+    "card_name": "Visa Infinite",
+    "document_title": "Chase Visa Infinite Guide to Benefits",
+    "url": "https://static.chasecdn.com/content/services/structured-document/document.en.pdf/card/benefits-center/product-benefits-guide-pdf/BGC11382_v2.pdf",
+    "filename": "chase_visa_infinite.pdf"
+  }
+]

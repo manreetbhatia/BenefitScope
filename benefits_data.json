@@ -1,0 +1,247 @@
+{
+  "$schema": "./benefit_schema.json",
+  "benefits": [
+    {
+      "issuer": "Chase",
+      "card_name": "Sapphire Preferred",
+      "benefit_type": "purchase_protection",
+      "coverage_window_days": 120,
+      "coverage_window_basis": "purchase_date",
+      "delay_threshold_hours": null,
+      "max_coverage_amount": 500,
+      "max_coverage_amount_currency": "USD",
+      "max_annual_amount": 50000,
+      "max_claims_per_period": null,
+      "eligible_categories": ["electronics", "appliances", "clothing", "jewelry", "household_goods"],
+      "required_evidence": ["original_receipt", "card_statement", "police_report_if_theft", "photos_if_damage"],
+      "exclusions": ["motor_vehicles", "boats_and_aircraft", "animals", "plants", "antiques", "used_or_pre_owned_items", "computer_software"],
+      "claim_filing_deadline_days": 90,
+      "payment_requirement": "any_amount_on_card",
+      "source": {
+        "document_title": "Chase Sapphire Preferred Guide to Benefits",
+        "url": "https://www.chase.com/personal/credit-cards/education/basics/extended-warranty-protection-with-chase-sapphire",
+        "retrieved_note": "120-day window and $500/item, $50,000/account figures cross-checked across Chase's own site and secondary sources (WalletHub, Norte); primary Guide to Benefits PDF has full legal terms."
+      }
+    },
+    {
+      "issuer": "Chase",
+      "card_name": "Sapphire Preferred",
+      "benefit_type": "return_protection",
+      "coverage_window_days": 90,
+      "coverage_window_basis": "purchase_date",
+      "delay_threshold_hours": null,
+      "max_coverage_amount": 500,
+      "max_coverage_amount_currency": "USD",
+      "max_annual_amount": 1000,
+      "max_claims_per_period": null,
+      "eligible_categories": ["electronics", "appliances", "clothing", "household_goods"],
+      "required_evidence": ["original_receipt", "card_statement", "proof_merchant_refused_return", "item_undamaged_confirmation"],
+      "exclusions": ["perishable_items", "consumable_items", "items_sold_as_is_or_final_sale", "motor_vehicles", "real_estate"],
+      "claim_filing_deadline_days": 90,
+      "payment_requirement": "any_amount_on_card",
+      "source": {
+        "document_title": "Chase Sapphire Preferred / Sapphire Reserve Guide to Benefits — Return Protection",
+        "url": "https://www.chase.com/personal/credit-cards/education/basics/extended-warranty-protection-with-chase-sapphire",
+        "retrieved_note": "90-day window, $500/item and $1,000/12-month-period caps confirmed via Chase's own benefits page and WalletHub's return-protection breakdown."
+      }
+    },
+    {
+      "issuer": "Chase",
+      "card_name": "Sapphire Preferred",
+      "benefit_type": "trip_delay_insurance",
+      "coverage_window_days": null,
+      "coverage_window_basis": "trip_delay_hours",
+      "delay_threshold_hours": 12,
+      "max_coverage_amount": 500,
+      "max_coverage_amount_currency": "USD",
+      "max_annual_amount": null,
+      "max_claims_per_period": null,
+      "eligible_categories": ["common_carrier_travel"],
+      "required_evidence": ["proof_of_delay_from_carrier", "itemized_receipts_for_expenses", "card_statement_showing_trip_payment"],
+      "exclusions": ["delays_caused_by_traveler_missing_departure", "pre_existing_medical_condition_related_delays", "trips_not_paid_with_eligible_card_or_points"],
+      "claim_filing_deadline_days": 60,
+      "payment_requirement": "partial_amount_on_card",
+      "source": {
+        "document_title": "A Guide to Chase Sapphire Travel Insurance",
+        "url": "https://www.chase.com/personal/credit-cards/education/basics/chase-trip-delay-insurance-what-to-know",
+        "retrieved_note": "12-hour delay threshold and $500/covered-traveler figure specific to Sapphire Preferred (Sapphire Reserve threshold is 6 hours — kept as a separate card_name if that card is added later)."
+      }
+    },
+    {
+      "issuer": "American Express",
+      "card_name": "Platinum",
+      "benefit_type": "purchase_protection",
+      "coverage_window_days": 90,
+      "coverage_window_basis": "purchase_date",
+      "delay_threshold_hours": null,
+      "max_coverage_amount": 10000,
+      "max_coverage_amount_currency": "USD",
+      "max_annual_amount": 50000,
+      "max_claims_per_period": null,
+      "eligible_categories": ["electronics", "appliances", "clothing", "jewelry", "household_goods"],
+      "required_evidence": ["itemized_receipt", "card_statement", "police_report_if_theft", "photos_if_damage", "proof_of_other_coverage_denial_if_applicable"],
+      "exclusions": ["motor_vehicles", "boats_and_aircraft", "animals", "plants", "antiques", "used_or_pre_owned_items", "items_left_with_common_carrier"],
+      "claim_filing_deadline_days": 90,
+      "payment_requirement": "any_amount_on_card",
+      "source": {
+        "document_title": "American Express Platinum Card — Purchase Protection",
+        "url": "https://upgradedpoints.com/credit-cards/reviews/american-express-platinum-card/purchase-protection/",
+        "retrieved_note": "90-day window (shorter than Chase's 120), $10,000/claim and $50,000/year figures corroborated across upgradedpoints.com and firstcard.app write-ups; underwritten by Amex Assurance Company."
+      }
+    },
+    {
+      "issuer": "American Express",
+      "card_name": "Platinum",
+      "benefit_type": "return_protection",
+      "coverage_window_days": 90,
+      "coverage_window_basis": "purchase_date",
+      "delay_threshold_hours": null,
+      "max_coverage_amount": 300,
+      "max_coverage_amount_currency": "USD",
+      "max_annual_amount": 1000,
+      "max_claims_per_period": null,
+      "eligible_categories": ["electronics", "clothing", "household_goods"],
+      "required_evidence": ["original_receipt", "card_statement", "proof_merchant_refused_return"],
+      "exclusions": ["shipping_and_handling_charges", "perishable_or_consumable_items", "items_sold_as_is_or_final_sale", "motor_vehicles", "real_estate"],
+      "claim_filing_deadline_days": 90,
+      "payment_requirement": "full_amount_on_card",
+      "source": {
+        "document_title": "American Express Return Protection Program Description",
+        "url": "https://www.americanexpress.com/content/dam/amex/us/credit-cards/features-benefits/policies/NAC-Benefit-Guides/RP_Benefit_Guide_Rev_10-20.pdf",
+        "retrieved_note": "$300/item, $1,000/calendar-year cap, 90-day window taken directly from Amex's published Return Protection Program Description PDF."
+      }
+    },
+    {
+      "issuer": "American Express",
+      "card_name": "Platinum",
+      "benefit_type": "trip_delay_insurance",
+      "coverage_window_days": null,
+      "coverage_window_basis": "trip_delay_hours",
+      "delay_threshold_hours": 6,
+      "max_coverage_amount": 500,
+      "max_coverage_amount_currency": "USD",
+      "max_annual_amount": null,
+      "max_claims_per_period": 2,
+      "eligible_categories": ["common_carrier_travel"],
+      "required_evidence": ["proof_of_delay_from_carrier", "itemized_receipts_for_expenses", "card_statement_showing_round_trip_paid_in_full"],
+      "exclusions": ["delays_reimbursed_by_airline_or_other_entity", "trips_not_paid_entirely_with_eligible_card"],
+      "claim_filing_deadline_days": 90,
+      "payment_requirement": "full_amount_on_card",
+      "source": {
+        "document_title": "Trip Delay Insurance | Platinum Card Benefits | American Express",
+        "url": "https://global.americanexpress.com/card-benefits/detail/trip-delay-insurance/platinum",
+        "retrieved_note": "6-hour delay threshold, $500/trip cap, 2 claims per 12 consecutive months — taken directly from Amex's own Platinum trip delay benefit page. Coverage is secondary, underwritten by New Hampshire Insurance Company (AIG)."
+      }
+    },
+    {
+      "issuer": "Citi",
+      "card_name": "Strata Premier",
+      "benefit_type": "purchase_protection",
+      "coverage_window_days": 90,
+      "coverage_window_basis": "purchase_date",
+      "delay_threshold_hours": null,
+      "max_coverage_amount": 10000,
+      "max_coverage_amount_currency": "USD",
+      "max_annual_amount": 50000,
+      "max_claims_per_period": null,
+      "eligible_categories": ["electronics", "appliances", "clothing", "jewelry", "household_goods"],
+      "required_evidence": ["original_receipt", "card_statement", "police_report_if_theft"],
+      "exclusions": ["motor_vehicles", "animals", "plants", "antiques", "used_or_pre_owned_items"],
+      "claim_filing_deadline_days": 60,
+      "payment_requirement": "any_amount_on_card",
+      "source": {
+        "document_title": "Citi Strata Premier Card — Damage and Theft (Purchase) Protection",
+        "url": "https://wallethub.com/answers/cc/citi-strata-premier-purchase-protection-1000410-2140813284/",
+        "retrieved_note": "90-day window, $10,000/incident, $50,000/year figures consistent across NerdWallet, WalletHub and Bankrate. NOTE: sources conflict on the claim submission deadline — WalletHub cites 180 days, a separate benefits-administrator summary cites 60 days; 60 days used here as the more conservative/operational figure. Flag this discrepancy explicitly in the report as an example of real-world T&C ambiguity the RAG system must handle."
+      }
+    },
+    {
+      "issuer": "Citi",
+      "card_name": "Strata Premier",
+      "benefit_type": "trip_delay_insurance",
+      "coverage_window_days": null,
+      "coverage_window_basis": "trip_delay_hours",
+      "delay_threshold_hours": 6,
+      "max_coverage_amount": 500,
+      "max_coverage_amount_currency": "USD",
+      "max_annual_amount": null,
+      "max_claims_per_period": 2,
+      "eligible_categories": ["common_carrier_travel"],
+      "required_evidence": ["proof_of_delay_from_carrier", "itemized_receipts_for_expenses", "card_statement_showing_trip_payment"],
+      "exclusions": ["missed_connections", "pre_existing_medical_conditions_within_60_days_of_booking", "baggage_delay_on_way_to_destination"],
+      "claim_filing_deadline_days": 60,
+      "payment_requirement": "partial_amount_on_card",
+      "source": {
+        "document_title": "Citi Strata Premier Card Travel Benefits — Trip Delay Protection",
+        "url": "https://www.citi.com/credit-cards/credit-card-rewards/citi-strata-premier-travel-benefits",
+        "retrieved_note": "6-hour delay threshold, $500/trip, 2 claims per 12 consecutive months, secondary coverage. Note: Citi Strata Premier does NOT offer return_protection — confirmed absent, not an omission (WalletHub: 'the Citi Strata Premier Card does not have return protection coverage'). This card intentionally has only 2 of 3 benefit types populated."
+      }
+    },
+    {
+      "issuer": "Capital One",
+      "card_name": "Venture X",
+      "benefit_type": "purchase_protection",
+      "coverage_window_days": 90,
+      "coverage_window_basis": "purchase_date",
+      "delay_threshold_hours": null,
+      "max_coverage_amount": 10000,
+      "max_coverage_amount_currency": "USD",
+      "max_annual_amount": 50000,
+      "max_claims_per_period": null,
+      "eligible_categories": ["electronics", "appliances", "clothing", "jewelry", "household_goods"],
+      "required_evidence": ["original_receipt", "card_statement", "police_report_if_theft", "photos_if_damage"],
+      "exclusions": ["motor_vehicles", "boats_and_aircraft", "animals", "plants", "antiques", "used_or_pre_owned_items"],
+      "claim_filing_deadline_days": 90,
+      "payment_requirement": "any_amount_on_card",
+      "source": {
+        "document_title": "Capital One Venture X Benefits Guide — Purchase Security",
+        "url": "https://hellosafe.com/credit-card-insurance/united-states/capital-one/venture-x",
+        "retrieved_note": "90-day window, $10,000/claim, $50,000/account figures corroborated by The Points Guy and Capital One's own benefits guide PDF. Underwritten by Indemnity Insurance Company of North America (Chubb); claims filed via cardbenefitservices.com."
+      }
+    },
+    {
+      "issuer": "Capital One",
+      "card_name": "Venture X",
+      "benefit_type": "return_protection",
+      "coverage_window_days": 90,
+      "coverage_window_basis": "purchase_date",
+      "delay_threshold_hours": null,
+      "max_coverage_amount": 300,
+      "max_coverage_amount_currency": "USD",
+      "max_annual_amount": 1000,
+      "max_claims_per_period": null,
+      "eligible_categories": ["electronics", "clothing", "household_goods"],
+      "required_evidence": ["original_receipt", "card_statement", "proof_merchant_refused_return"],
+      "exclusions": ["perishable_or_consumable_items", "items_sold_as_is_or_final_sale", "motor_vehicles", "real_estate"],
+      "claim_filing_deadline_days": 90,
+      "payment_requirement": "any_amount_on_card",
+      "source": {
+        "document_title": "Capital One Venture X Benefits Guide — Return Protection",
+        "url": "https://www.capitalone.com/learn-grow/more-than-money/all-about-venture-x/",
+        "retrieved_note": "90-day return window, $300/item and $1,000/account caps corroborated via The Points Guy's Venture X FAQ summary and Capital One's own product page."
+      }
+    },
+    {
+      "issuer": "Capital One",
+      "card_name": "Venture X",
+      "benefit_type": "trip_delay_insurance",
+      "coverage_window_days": null,
+      "coverage_window_basis": "trip_delay_hours",
+      "delay_threshold_hours": 6,
+      "max_coverage_amount": 500,
+      "max_coverage_amount_currency": "USD",
+      "max_annual_amount": null,
+      "max_claims_per_period": null,
+      "eligible_categories": ["common_carrier_travel"],
+      "required_evidence": ["proof_of_delay_from_carrier", "itemized_receipts_for_expenses", "card_statement_showing_trip_payment"],
+      "exclusions": ["delays_reimbursed_by_airline_or_other_entity", "trips_not_paid_with_eligible_card_or_points"],
+      "claim_filing_deadline_days": 90,
+      "payment_requirement": "partial_amount_on_card",
+      "source": {
+        "document_title": "Capital One Venture X — Trip Delay Reimbursement",
+        "url": "https://thepointsguy.com/news/capital-one-venture-x-faqs/",
+        "retrieved_note": "6-hour delay or overnight-stay trigger, $500/person figure corroborated by Forbes Advisor and Thrifty Traveler. Underwritten by Federal Insurance Company (Chubb); claims filed via eclaimsline.com. No explicit per-period claim cap found in secondary sources — left null rather than guessed."
+      }
+    }
+  ]
+}

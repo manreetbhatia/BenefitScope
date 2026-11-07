@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cardbenefitengine.local/schemas/benefit.schema.json",
+  "title": "CardBenefit",
+  "description": "Schema for a single insurance/protection benefit offered by a card issuer's plan. One JSON object per (issuer, card, benefit_type) combination.",
+  "type": "object",
+  "required": [
+    "issuer",
+    "card_name",
+    "benefit_type",
+    "coverage_window_days",
+    "max_coverage_amount",
+    "max_coverage_amount_currency",
+    "eligible_categories",
+    "required_evidence",
+    "exclusions",
+    "claim_filing_deadline_days",
+    "source"
+  ],
+  "properties": {
+    "issuer": {
+      "type": "string",
+      "description": "The card-issuing bank/company, e.g. 'Chase', 'American Express'."
+    },
+    "card_name": {
+      "type": "string",
+      "description": "The specific card product this benefit applies to, e.g. 'Sapphire Preferred'."
+    },
+    "benefit_type": {
+      "type": "string",
+      "enum": ["purchase_protection", "return_protection", "trip_delay_insurance"],
+      "description": "Which of the three supported benefit categories this record describes."
+    },
+    "coverage_window_days": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "description": "Number of days after the purchase during which the item remains eligible for coverage. Null for trip_delay_insurance, which uses delay_threshold_hours instead."
+    },
+    "coverage_window_basis": {
+      "type": "string",
+      "enum": ["purchase_date", "incident_date", "trip_delay_hours"],
+      "description": "What the coverage_window_days is measured from. For trip_delay_insurance this may instead be expressed via delay_threshold_hours."
+    },
+    "delay_threshold_hours": {
+      "type": ["integer", "null"],
+      "description": "For trip_delay_insurance only: minimum delay length (in hours) required to trigger eligibility. Null for non-travel benefits.",
+      "default": null
+    },
+    "max_coverage_amount": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Maximum reimbursement per claim/item."
+    },
+    "max_coverage_amount_currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$",
+      "description": "ISO 4217 currency code, e.g. 'USD'."
+    },
+    "max_annual_amount": {
+      "type": ["number", "null"],
+      "description": "Maximum aggregate reimbursement per cardmember per 12-month/calendar-year period, if capped separately from the per-claim limit.",
+      "default": null
+    },
+    "max_claims_per_period": {
+      "type": ["integer", "null"],
+      "description": "Maximum number of claims allowed within a stated period (e.g. 2 claims per 12 months), if applicable.",
+      "default": null
+    },
+    "eligible_categories": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Purchase/transaction categories this benefit applies to, e.g. ['electronics', 'appliances', 'clothing'] or ['common_carrier_travel']."
+    },
+    "required_evidence": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "Documents/evidence a claimant must provide, e.g. ['original_receipt', 'card_statement', 'police_report']."
+    },
+    "exclusions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Item types, categories, or circumstances explicitly not covered."
+    },
+    "claim_filing_deadline_days": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of days from the incident within which a claim must be filed with the benefit administrator."
+    },
+    "payment_requirement": {
+      "type": "string",
+      "enum": ["full_amount_on_card", "partial_amount_on_card", "any_amount_on_card"],
+      "default": "any_amount_on_card",
+      "description": "How much of the purchase/trip cost must have been charged to the eligible card for the benefit to apply."
+    },
+    "source": {
+      "type": "object",
+      "required": ["document_title", "url", "retrieved_note"],
+      "properties": {
+        "document_title": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "retrieved_note": {
+          "type": "string",
+          "description": "Free-text note on where/how this figure was sourced, for traceability back to the issuer's Guide to Benefits."
+        }
+      },
+      "description": "Provenance metadata — required so every rule in the RAG corpus/eligibility engine can be traced back to an authoritative source, since benefit terms change over time and per-card variants exist."
+    }
+  }
+}

@@ -1,0 +1,523 @@
+{
+  "retrieval": {
+    "queries": 11,
+    "filtered_hit_rate": 0.727,
+    "expanded_hit_rate": 1.0,
+    "context_precision_filtered": 1.0,
+    "context_recall_filtered": 0.591,
+    "context_precision_with_neighbor_pages": 0.727,
+    "context_recall_with_neighbor_pages": 0.636,
+    "benefits_with_no_filtered_hit": [
+      "Chase Sapphire Preferred return_protection",
+      "American Express Platinum trip_delay_insurance",
+      "Citi Strata Premier trip_delay_insurance"
+    ],
+    "per_benefit": [
+      {
+        "issuer": "Chase",
+        "card_name": "Sapphire Preferred",
+        "benefit_type": "purchase_protection",
+        "strict_hits": 1,
+        "strict_precision": 1.0,
+        "strict_fact_recall": 1.0,
+        "expanded_hits": 4,
+        "expanded_precision": 1.0,
+        "expanded_fact_recall": 1.0
+      },
+      {
+        "issuer": "Chase",
+        "card_name": "Sapphire Preferred",
+        "benefit_type": "return_protection",
+        "strict_hits": 0,
+        "strict_precision": 0.0,
+        "strict_fact_recall": 0.0,
+        "expanded_hits": 4,
+        "expanded_precision": 0.0,
+        "expanded_fact_recall": 0.5
+      },
+      {
+        "issuer": "Chase",
+        "card_name": "Sapphire Preferred",
+        "benefit_type": "trip_delay_insurance",
+        "strict_hits": 1,
+        "strict_precision": 1.0,
+        "strict_fact_recall": 0.5,
+        "expanded_hits": 4,
+        "expanded_precision": 1.0,
+        "expanded_fact_recall": 0.5
+      },
+      {
+        "issuer": "American Express",
+        "card_name": "Platinum",
+        "benefit_type": "purchase_protection",
+        "strict_hits": 4,
+        "strict_precision": 1.0,
+        "strict_fact_recall": 1.0,
+        "expanded_hits": 6,
+        "expanded_precision": 1.0,
+        "expanded_fact_recall": 1.0
+      },
+      {
+        "issuer": "American Express",
+        "card_name": "Platinum",
+        "benefit_type": "return_protection",
+        "strict_hits": 1,
+        "strict_precision": 1.0,
+        "strict_fact_recall": 1.0,
+        "expanded_hits": 2,
+        "expanded_precision": 1.0,
+        "expanded_fact_recall": 1.0
+      },
+      {
+        "issuer": "American Express",
+        "card_name": "Platinum",
+        "benefit_type": "trip_delay_insurance",
+        "strict_hits": 0,
+        "strict_precision": 0.0,
+        "strict_fact_recall": 0.0,
+        "expanded_hits": 4,
+        "expanded_precision": 0.0,
+        "expanded_fact_recall": 0.0
+      },
+      {
+        "issuer": "Citi",
+        "card_name": "Strata Premier",
+        "benefit_type": "purchase_protection",
+        "strict_hits": 1,
+        "strict_precision": 1.0,
+        "strict_fact_recall": 0.5,
+        "expanded_hits": 4,
+        "expanded_precision": 1.0,
+        "expanded_fact_recall": 0.5
+      },
+      {
+        "issuer": "Citi",
+        "card_name": "Strata Premier",
+        "benefit_type": "trip_delay_insurance",
+        "strict_hits": 0,
+        "strict_precision": 0.0,
+        "strict_fact_recall": 0.0,
+        "expanded_hits": 4,
+        "expanded_precision": 0.0,
+        "expanded_fact_recall": 0.0
+      },
+      {
+        "issuer": "Capital One",
+        "card_name": "Venture X",
+        "benefit_type": "purchase_protection",
+        "strict_hits": 1,
+        "strict_precision": 1.0,
+        "strict_fact_recall": 1.0,
+        "expanded_hits": 4,
+        "expanded_precision": 1.0,
+        "expanded_fact_recall": 1.0
+      },
+      {
+        "issuer": "Capital One",
+        "card_name": "Venture X",
+        "benefit_type": "return_protection",
+        "strict_hits": 1,
+        "strict_precision": 1.0,
+        "strict_fact_recall": 1.0,
+        "expanded_hits": 4,
+        "expanded_precision": 1.0,
+        "expanded_fact_recall": 1.0
+      },
+      {
+        "issuer": "Capital One",
+        "card_name": "Venture X",
+        "benefit_type": "trip_delay_insurance",
+        "strict_hits": 1,
+        "strict_precision": 1.0,
+        "strict_fact_recall": 0.5,
+        "expanded_hits": 4,
+        "expanded_precision": 1.0,
+        "expanded_fact_recall": 0.5
+      }
+    ]
+  },
+  "eligibility": {
+    "overall": {
+      "count": 28,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "model_only": {
+      "count": 14,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "decision_sources": {
+      "hard_check": 13,
+      "model": 14,
+      "benefit_rule": 1
+    },
+    "per_benefit_type": {
+      "purchase_protection": {
+        "count": 8,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "return_protection": {
+        "count": 8,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "trip_delay_insurance": {
+        "count": 8,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "mistakes": [],
+    "checklist_overrides": [],
+    "predictions": [
+      {
+        "transaction_id": "txn_0010",
+        "issuer": "Chase",
+        "predicted_eligible": false,
+        "predicted_benefit_type": null,
+        "actual_eligible": false,
+        "actual_benefit_type": null,
+        "reason": "No damage, theft, denied return, or flight delay is attached to this purchase.",
+        "confidence": 1.0,
+        "decision_source": "hard_check",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0021",
+        "issuer": "Chase",
+        "predicted_eligible": false,
+        "predicted_benefit_type": null,
+        "actual_eligible": false,
+        "actual_benefit_type": null,
+        "reason": "No damage, theft, denied return, or flight delay is attached to this purchase.",
+        "confidence": 1.0,
+        "decision_source": "hard_check",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0029",
+        "issuer": "Chase",
+        "predicted_eligible": false,
+        "predicted_benefit_type": null,
+        "actual_eligible": false,
+        "actual_benefit_type": null,
+        "reason": "No damage, theft, denied return, or flight delay is attached to this purchase.",
+        "confidence": 1.0,
+        "decision_source": "hard_check",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0039",
+        "issuer": "American Express",
+        "predicted_eligible": false,
+        "predicted_benefit_type": null,
+        "actual_eligible": false,
+        "actual_benefit_type": null,
+        "reason": "No damage, theft, denied return, or flight delay is attached to this purchase.",
+        "confidence": 1.0,
+        "decision_source": "hard_check",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0005",
+        "issuer": "Chase",
+        "predicted_eligible": false,
+        "predicted_benefit_type": null,
+        "actual_eligible": false,
+        "actual_benefit_type": "purchase_protection",
+        "reason": "the event is on day 121, which is past the 120-day coverage window",
+        "confidence": 1.0,
+        "decision_source": "hard_check",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0006",
+        "issuer": "Chase",
+        "predicted_eligible": false,
+        "predicted_benefit_type": null,
+        "actual_eligible": false,
+        "actual_benefit_type": "purchase_protection",
+        "reason": "category groceries is not covered",
+        "confidence": 1.0,
+        "decision_source": "hard_check",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0007",
+        "issuer": "Chase",
+        "predicted_eligible": false,
+        "predicted_benefit_type": null,
+        "actual_eligible": false,
+        "actual_benefit_type": "purchase_protection",
+        "reason": "category motor_vehicles is not covered",
+        "confidence": 1.0,
+        "decision_source": "hard_check",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0008",
+        "issuer": "Chase",
+        "predicted_eligible": false,
+        "predicted_benefit_type": "purchase_protection",
+        "actual_eligible": false,
+        "actual_benefit_type": "purchase_protection",
+        "reason": "This purchase is missing required documents: original receipt.",
+        "confidence": 0.0,
+        "decision_source": "model",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0001",
+        "issuer": "Chase",
+        "predicted_eligible": true,
+        "predicted_benefit_type": "purchase_protection",
+        "actual_eligible": true,
+        "actual_benefit_type": "purchase_protection",
+        "reason": "Your item was bought with the card, is an eligible electronics purchase, the theft happened within the 120\u2011day window, and you have the receipt, statement, and police report needed for a claim.",
+        "confidence": 0.99,
+        "decision_source": "model",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0002",
+        "issuer": "Chase",
+        "predicted_eligible": true,
+        "predicted_benefit_type": "purchase_protection",
+        "actual_eligible": true,
+        "actual_benefit_type": "purchase_protection",
+        "reason": "The theft happened within the 120\u2011day coverage window, the item is in an eligible category, and all required evidence (receipt, statement, police report) is provided, so the claim is eligible.",
+        "confidence": 0.99,
+        "decision_source": "model",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0003",
+        "issuer": "Chase",
+        "predicted_eligible": true,
+        "predicted_benefit_type": "purchase_protection",
+        "actual_eligible": true,
+        "actual_benefit_type": "purchase_protection",
+        "reason": "The purchase was made within the 120\u2011day window, the item is in an eligible category, all required evidence is provided, and the amount is below the $500 limit, so the claim is eligible.",
+        "confidence": 0.99,
+        "decision_source": "model",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0004",
+        "issuer": "Chase",
+        "predicted_eligible": true,
+        "predicted_benefit_type": "purchase_protection",
+        "actual_eligible": true,
+        "actual_benefit_type": "purchase_protection",
+        "reason": "The purchase is within the 120\u2011day window, the item is eligible, all required evidence is provided, and the amount is above the $500 cap so reimbursement will be up to $500.",
+        "confidence": 0.99,
+        "decision_source": "model",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0016",
+        "issuer": "Chase",
+        "predicted_eligible": false,
+        "predicted_benefit_type": null,
+        "actual_eligible": false,
+        "actual_benefit_type": "return_protection",
+        "reason": "the event is on day 91, which is past the 90-day coverage window",
+        "confidence": 1.0,
+        "decision_source": "hard_check",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0017",
+        "issuer": "Chase",
+        "predicted_eligible": false,
+        "predicted_benefit_type": null,
+        "actual_eligible": false,
+        "actual_benefit_type": "return_protection",
+        "reason": "category groceries is not covered",
+        "confidence": 1.0,
+        "decision_source": "hard_check",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0018",
+        "issuer": "Chase",
+        "predicted_eligible": false,
+        "predicted_benefit_type": null,
+        "actual_eligible": false,
+        "actual_benefit_type": "return_protection",
+        "reason": "category perishable_items is not covered",
+        "confidence": 1.0,
+        "decision_source": "hard_check",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0019",
+        "issuer": "Chase",
+        "predicted_eligible": false,
+        "predicted_benefit_type": "return_protection",
+        "actual_eligible": false,
+        "actual_benefit_type": "return_protection",
+        "reason": "This purchase is missing required documents: original receipt.",
+        "confidence": 0.95,
+        "decision_source": "model",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0012",
+        "issuer": "Chase",
+        "predicted_eligible": true,
+        "predicted_benefit_type": "return_protection",
+        "actual_eligible": true,
+        "actual_benefit_type": "return_protection",
+        "reason": "All required evidence is provided, the purchase is in an eligible category, and the return was denied within the 90\u2011day coverage window, so the claim is eligible.",
+        "confidence": 0.99,
+        "decision_source": "model",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0013",
+        "issuer": "Chase",
+        "predicted_eligible": true,
+        "predicted_benefit_type": "return_protection",
+        "actual_eligible": true,
+        "actual_benefit_type": "return_protection",
+        "reason": "The policy model could not be read (Groq API request failed (400)). The structured benefit rule was used instead.",
+        "confidence": 0.55,
+        "decision_source": "benefit_rule",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0014",
+        "issuer": "Chase",
+        "predicted_eligible": true,
+        "predicted_benefit_type": "return_protection",
+        "actual_eligible": true,
+        "actual_benefit_type": "return_protection",
+        "reason": "All required evidence is provided, the purchase is within the 90\u2011day coverage window, and the item falls under an eligible category. Therefore the claim is eligible for return protection.",
+        "confidence": 0.99,
+        "decision_source": "model",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0015",
+        "issuer": "Chase",
+        "predicted_eligible": true,
+        "predicted_benefit_type": "return_protection",
+        "actual_eligible": true,
+        "actual_benefit_type": "return_protection",
+        "reason": "The purchase is in an eligible category, the return denial happened within the 90\u2011day window, all required evidence is present, and the amount exceeds the $500 cap, so you qualify for partial reimbursement up to $500.",
+        "confidence": 0.99,
+        "decision_source": "model",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0023",
+        "issuer": "Chase",
+        "predicted_eligible": false,
+        "predicted_benefit_type": null,
+        "actual_eligible": false,
+        "actual_benefit_type": "trip_delay_insurance",
+        "reason": "the delay of 11 hours is below the 12-hour minimum",
+        "confidence": 1.0,
+        "decision_source": "hard_check",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0026",
+        "issuer": "Chase",
+        "predicted_eligible": false,
+        "predicted_benefit_type": null,
+        "actual_eligible": false,
+        "actual_benefit_type": "trip_delay_insurance",
+        "reason": "category electronics is not covered",
+        "confidence": 1.0,
+        "decision_source": "hard_check",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0027",
+        "issuer": "Chase",
+        "predicted_eligible": false,
+        "predicted_benefit_type": "trip_delay_insurance",
+        "actual_eligible": false,
+        "actual_benefit_type": "trip_delay_insurance",
+        "reason": "This purchase is missing required documents: proof of delay from carrier.",
+        "confidence": 1.0,
+        "decision_source": "model",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0028",
+        "issuer": "Chase",
+        "predicted_eligible": false,
+        "predicted_benefit_type": null,
+        "actual_eligible": false,
+        "actual_benefit_type": "trip_delay_insurance",
+        "reason": "the amount charged to the card does not meet partial_amount_on_card",
+        "confidence": 1.0,
+        "decision_source": "hard_check",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0022",
+        "issuer": "Chase",
+        "predicted_eligible": true,
+        "predicted_benefit_type": "trip_delay_insurance",
+        "actual_eligible": true,
+        "actual_benefit_type": "trip_delay_insurance",
+        "reason": "Your Amtrak trip was delayed 12 hours, which meets the 12\u2011hour minimum. You provided all required documents, so the claim is eligible for up to $500 reimbursement.",
+        "confidence": 0.99,
+        "decision_source": "model",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0024",
+        "issuer": "Chase",
+        "predicted_eligible": true,
+        "predicted_benefit_type": "trip_delay_insurance",
+        "actual_eligible": true,
+        "actual_benefit_type": "trip_delay_insurance",
+        "reason": "Your Amtrak trip was delayed 13 hours, which exceeds the 12\u2011hour minimum, and you have all required evidence, so the claim is eligible.",
+        "confidence": 0.99,
+        "decision_source": "model",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0025",
+        "issuer": "Chase",
+        "predicted_eligible": true,
+        "predicted_benefit_type": "trip_delay_insurance",
+        "actual_eligible": true,
+        "actual_benefit_type": "trip_delay_insurance",
+        "reason": "Your Amtrak trip was delayed 16 hours, which meets the 12\u2011hour threshold, and you have all required documents. The benefit covers up to $500, so you are eligible for partial reimbursement.",
+        "confidence": 0.95,
+        "decision_source": "model",
+        "checklist_override": false
+      },
+      {
+        "transaction_id": "txn_0052",
+        "issuer": "American Express",
+        "predicted_eligible": true,
+        "predicted_benefit_type": "trip_delay_insurance",
+        "actual_eligible": true,
+        "actual_benefit_type": "trip_delay_insurance",
+        "reason": "All required evidence is provided, the delay meets the 6\u2011hour threshold, and the trip was paid entirely with the eligible card, so the claim is eligible.",
+        "confidence": 0.99,
+        "decision_source": "model",
+        "checklist_override": false
+      }
+    ]
+  }
+}

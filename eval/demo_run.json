@@ -1,0 +1,134 @@
+[
+  {
+    "transaction_id": "txn_0001",
+    "card": "Chase Sapphire Preferred",
+    "merchant": "B&H Photo",
+    "amount": 220.0,
+    "event": "theft",
+    "delay_hours": null,
+    "labeled_eligible": true,
+    "labeled_benefit": "purchase_protection",
+    "eligible": true,
+    "benefit_type": "purchase_protection",
+    "confidence": 0.99,
+    "reason": "The purchase was made in an eligible category, within the 120\u2011day coverage window, and all required evidence (receipt, statement, police report) is provided, so the claim is eligible.",
+    "cited_clause": "\"coverage_window_days\": 120",
+    "cited_source": {
+      "document_title": "Chase Sapphire Preferred Guide to Benefits",
+      "page": null,
+      "url": "https://www.chase.com/personal/credit-cards/education/basics/extended-warranty-protection-with-chase-sapphire"
+    },
+    "missing_evidence": [],
+    "matched_label": true
+  },
+  {
+    "transaction_id": "txn_0091",
+    "card": "Capital One Venture X",
+    "merchant": "Apple Store",
+    "amount": 220.0,
+    "event": "store_return_denied",
+    "delay_hours": null,
+    "labeled_eligible": true,
+    "labeled_benefit": "return_protection",
+    "eligible": true,
+    "benefit_type": "return_protection",
+    "confidence": 0.99,
+    "reason": "All required evidence is provided, the purchase is within the 90\u2011day window, and the item is an eligible electronics category. The claim meets the coverage limits and exclusions, so the return protection benefit applies.",
+    "cited_clause": "within ninety (90) days",
+    "cited_source": {
+      "document_title": "Capital One Visa Infinite Guide to Card Benefits",
+      "page": 14,
+      "url": "https://ecm.capitalone.com/WCM/card/benefits-guide/visa-benefits-guides/visa-infinite-english.pdf"
+    },
+    "missing_evidence": [],
+    "matched_label": true
+  },
+  {
+    "transaction_id": "txn_0022",
+    "card": "Chase Sapphire Preferred",
+    "merchant": "Amtrak",
+    "amount": 220.0,
+    "event": "flight_delay",
+    "delay_hours": 12,
+    "labeled_eligible": true,
+    "labeled_benefit": "trip_delay_insurance",
+    "eligible": true,
+    "benefit_type": "trip_delay_insurance",
+    "confidence": 0.99,
+    "reason": "Your Amtrak trip was delayed 12 hours, which meets the 12\u2011hour minimum, and you have all required documents, so the claim is eligible for up to $500.",
+    "cited_clause": "This benefit applies if the Covered Traveler\u2019s Common Carrier is delayed for more than twelve (12) hours or requires an overnight stay.",
+    "cited_source": {
+      "document_title": "Chase Sapphire Preferred Guide to Benefits",
+      "page": 33,
+      "url": "https://static.chasecdn.com/content/services/structured-document/document.en.pdf/card/benefits-center/product-benefits-guide-pdf/BGC11387_v2.pdf"
+    },
+    "missing_evidence": [],
+    "matched_label": true
+  },
+  {
+    "transaction_id": "txn_0005",
+    "card": "Chase Sapphire Preferred",
+    "merchant": "Apple Store",
+    "amount": 220.0,
+    "event": "theft",
+    "delay_hours": null,
+    "labeled_eligible": false,
+    "labeled_benefit": "purchase_protection",
+    "eligible": false,
+    "benefit_type": null,
+    "confidence": 1.0,
+    "reason": "the event is on day 121, which is past the 120-day coverage window",
+    "cited_clause": "",
+    "cited_source": {
+      "document_title": "",
+      "page": null,
+      "url": ""
+    },
+    "missing_evidence": [],
+    "matched_label": true
+  },
+  {
+    "transaction_id": "txn_0053",
+    "card": "American Express Platinum",
+    "merchant": "Delta Air Lines",
+    "amount": 220.0,
+    "event": "flight_delay",
+    "delay_hours": 5,
+    "labeled_eligible": false,
+    "labeled_benefit": "trip_delay_insurance",
+    "eligible": false,
+    "benefit_type": null,
+    "confidence": 1.0,
+    "reason": "the delay of 5 hours is below the 6-hour minimum",
+    "cited_clause": "",
+    "cited_source": {
+      "document_title": "",
+      "page": null,
+      "url": ""
+    },
+    "missing_evidence": [],
+    "matched_label": true
+  },
+  {
+    "transaction_id": "txn_0109",
+    "card": "Citi Strata Premier",
+    "merchant": "Best Buy",
+    "amount": 250.0,
+    "event": "store_return_denied",
+    "delay_hours": null,
+    "labeled_eligible": false,
+    "labeled_benefit": null,
+    "eligible": false,
+    "benefit_type": null,
+    "confidence": 1.0,
+    "reason": "Citi Strata Premier does not offer return protection.",
+    "cited_clause": "",
+    "cited_source": {
+      "document_title": "",
+      "page": null,
+      "url": ""
+    },
+    "missing_evidence": [],
+    "matched_label": true
+  }
+]
